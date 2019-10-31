@@ -1,0 +1,402 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+.header {
+  background-color: #445162;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.center {
+  max-width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.header__title {
+  font-size: 60px;
+  margin: 0;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.header-list {
+  margin: 52px 0 0;
+  padding: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.list__item {
+  list-style: none;
+  background: url(../images/icons/check-mark-icon.png) no-repeat;
+  padding-left: 35px;
+  margin-bottom: 15px;
+}
+
+.header__block {
+  width: 470px;
+  height: 215px;
+  background-color: #ffffff;
+}
+
+.container {
+  display: flex;
+  padding: 50px;
+  box-sizing: border-box;
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+}
+
+.about-your-product__content {
+  justify-content: space-between;
+}
+
+.about-your-product__title {
+  font-size: 30px;
+  font-weight: normal;
+  color: #445161;
+}
+
+.about-your-product__text {
+  max-width: 665px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.about-your-product__block {
+  float: right;
+  width: 430px;
+  height: 245px;
+  background-color: #445161;
+}
+
+.advantages {
+  background-color: #f5f5f5;
+}
+
+.advantages__content {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.advantages__title {
+  margin: 0 auto 30px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #445161;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  color: #333333;
+}
+
+.advantages__item {
+  list-style-type: none;
+}
+
+.advantages__text {
+  max-width: 590px;
+  padding-left: 41px;
+  padding-right: 7px;
+  margin: 0 0 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: url(../images/icons/plus-icon.png) no-repeat 0 2px;
+}
+
+.scrinshots__content {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.scrinshots__title {
+  margin: 0 auto 35px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #445161;
+}
+
+.scrinshots__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1180px;
+  width: 100%;
+}
+
+.scrinshot {
+  max-width: 590px;
+  margin-bottom: 30px;
+}
+
+.scrinshot__image {
+  width: 200px;
+  height: 152px;
+  margin-right: 15px;
+  float: left;
+  background-color: #445161;
+}
+
+.scrinshot__name {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 18px;
+  margin: 0 0 16px;
+  color: #445161;
+}
+
+.scrinshot__description {
+  padding-right: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  color: #333333;
+}
+
+.reviews {
+  background-color: #f5f5f5;
+}
+
+.reviews__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 26px;
+}
+
+.reviews__title {
+  margin: 0 auto 35px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #445161;
+}
+
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.review {
+  display: flex;
+  justify-content: space-between;
+  max-width: 574px;
+  margin-bottom: 24px;
+}
+
+.review__photo {
+  width: 75px;
+  height: 75px;
+  border-radius: calc(75px / 2);
+  margin-right: 16px;
+  background-color: #445161;
+}
+
+.review__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 483px;
+  padding: 16px 15px 16px 27px;
+  background: url(../images/reviews/review-background.png) no-repeat;
+}
+
+.review__description {
+  margin: 0 0 9px;
+  font-size: 14px;
+  font-style: italic;
+  color: #333333;
+}
+
+.review__name {
+  margin: 0;
+  font-size: 14px;
+  color: #989898;
+}
+
+.buy__content {
+  flex-direction: column;
+  padding: 50px;
+  max-width: 1090px;
+}
+
+.buy__title {
+  margin: 0 auto 29px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #445161;
+}
+
+.buy__prises {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tariff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  padding: 2px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #445162;
+}
+
+.tariff__title {
+  margin: 17px auto;
+  font-size: 24px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.tariff__prise {
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.tariff__money {
+  margin: 13px auto;
+  font-size: 40px;
+  color: #445162;
+}
+
+.services-list {
+  margin: 20px 29px 12px 20px;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.services-list__item {
+  margin-bottom: 8px;
+}
+
+.button {
+  margin: 0 20px 20px;
+  max-width: 260px;
+  width: 100%;
+  border: 0;
+  padding: 14px 0;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #445161;
+  background-color: #ffffff;
+}
+
+.contacts {
+  background-color: #445162;
+}
+
+.contacts__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 890px;
+}
+
+.contacts__title {
+  margin: 0 auto 31px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.contacts__details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form__name {
+  margin-bottom: 21px;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  border: 0;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.form__email {
+  margin-bottom: 22px;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  border: 0;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.form__message {
+  margin-bottom: 21px;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  height: 170px;
+  border: 0;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  border-radius: 5px;
+}
+
+.form__button {
+  width: 100%;
+  max-width: 140px;
+  padding: 14px 10px;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #445162;
+  background-color: #ffffff;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 240px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
+.contact__text {
+  margin: 0 0 0 5px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  max-width: 240px;
+}
