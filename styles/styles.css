@@ -10,11 +10,13 @@ body {
 }
 
 .center {
-  max-width: 1180px;
   display: flex;
+  padding: 50px;
+  box-sizing: border-box;
+  max-width: 1280px;
+  width: 100%;
   justify-content: space-between;
   margin: auto;
-  box-sizing: border-box;
 }
 
 .header__title {
@@ -96,6 +98,7 @@ body {
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 0;
   margin: 0;
   color: #333333;
@@ -131,6 +134,7 @@ body {
 .scrinshots__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   max-width: 1180px;
   width: 100%;
 }
@@ -240,6 +244,7 @@ body {
 .buy__prises {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .tariff {
@@ -286,7 +291,7 @@ body {
 .button {
   margin: 0 20px 20px;
   max-width: 260px;
-  width: 100%;
+  width: calc(100% - 40px);
   border: 0;
   padding: 14px 0;
   border-radius: 5px;
@@ -329,8 +334,13 @@ body {
   max-width: 500px;
 }
 
-.form__name {
+.form-group {
+  margin: 0;
   margin-bottom: 21px;
+  width: 100%;
+}
+
+.form__name {
   box-sizing: border-box;
   padding: 12px 10px;
   border: 0;
@@ -340,7 +350,6 @@ body {
 }
 
 .form__email {
-  margin-bottom: 22px;
   box-sizing: border-box;
   padding: 12px 10px;
   border: 0;
@@ -355,7 +364,7 @@ body {
   padding: 12px 10px;
   height: 170px;
   border: 0;
-  width: 100%;
+  width: 500px;
   font-size: 16px;
   font-family: "Arial", sans-serif;
   border-radius: 5px;
@@ -399,4 +408,55 @@ body {
   justify-content: space-between;
   margin-top: 13px;
   max-width: 240px;
+}
+
+.footer {
+  padding: 10px 0 5px;
+}
+
+.footer__text {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  color: #445162;
+}
+
+@media (max-width: 1280px) {
+  .reviews__list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .tariff {
+    max-width: 220px;
+  }
+
+  .contacts__details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    margin-bottom: 20px;
+  }
+
+  .social {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
+
+  .social-list {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tariff {
+    max-width: 170px;
+  }
 }

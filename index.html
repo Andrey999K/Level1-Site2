@@ -171,7 +171,7 @@
 
         <section class="buy">
             <div class="container buy__content">
-                <h2 class="buy__title">By it now</h2>
+                <h2 class="buy__title">Buy it now</h2>
                 <div class="buy__prises">
 
                     <div class="tariff">
@@ -236,13 +236,19 @@
             <div class="container contacts__content">
                 <h2 class="contacts__title">Contacts</h2>
                 <div class="contacts__details">
-                    <div class="form">
-                        <input class="form__name" type="text" placeholder="Your name:">
-                        <input class="form__email" type="text" placeholder="Your emale:">
+                    <form class="form">
+                        <p class="form-group">
+                            <input class="form__name" id="form-name" type="text" placeholder="Your name:">
+                            <label for="form-name"></label>
+                        </p>
+                        <p class="form-group">
+                            <input class="form__email" id="form-email" type="text" placeholder="Your emale:">
+                            <label for="form-email"></label>
+                        </p>
                         <textarea class="form__message" name="" id="" cols="30" rows="10"
                             placeholder="Your message:"></textarea>
-                        <button class="form__button">SEND</button>
-                    </div>
+                        <button class="form__button" type="submit">SEND</button>
+                    </form>
                     <div class="social">
                         <div class="contact">
                             <img class="contact__icon" src="./images/icons/society/skype-icon.png" width="24"
@@ -281,6 +287,10 @@
                 </div>
             </div>
         </section>
+
+        <footer class="footer">
+            <p class="footer__text">Copyright © 2014 Product name · PSD HTML CSS</p>
+        </footer>
     </main>
 
 </body>
