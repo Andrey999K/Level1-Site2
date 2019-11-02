@@ -201,6 +201,7 @@ body {
 
 .review__photo {
   width: 75px;
+  min-width: 75px;
   height: 75px;
   border-radius: calc(75px / 2);
   margin-right: 16px;
@@ -208,11 +209,14 @@ body {
 }
 
 .review__text {
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: 483px;
-  padding: 16px 15px 16px 27px;
-  background: url(../images/reviews/review-background.png) no-repeat;
+  padding: 16px 15px 16px;
+  margin-left: 13px;
+  background-color: #ebebeb;
+  /* background: url(../images/reviews/review-background.png) no-repeat; */
 }
 
 .review__description {
@@ -226,6 +230,18 @@ body {
   margin: 0;
   font-size: 14px;
   color: #989898;
+}
+
+.review__name::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 27px;
+  left: -12px;
+  height: 23px;
+  width: 12px;
+  clip-path: polygon(100% 0, 100% 100%, 100% 100%, 0% 50%);
+  background-color: #ebebeb;
 }
 
 .buy__content {
@@ -428,7 +444,6 @@ body {
 }
 
 @media (max-width: 1000px) {
-
   .tariff {
     max-width: 220px;
   }
