@@ -40,7 +40,7 @@ body {
   margin-bottom: 13px;
 }
 
-.header__block {
+.header__image {
   width: 470px;
   height: 215px;
   background-color: #ffffff;
@@ -245,7 +245,7 @@ body {
   left: -11px;
   height: 23px;
   width: 12px;
-  clip-path: polygon(100% 0, 100% 100%, 100% 100%, 0% 50%);
+  clip-path: polygon(100% 0, 100% 100%, 0% 50%);
   background-color: #ebebeb;
 }
 
@@ -319,11 +319,19 @@ body {
   border: 0;
   padding: 14px 0;
   border-radius: 5px;
+  border: solid 1px;
+  box-sizing: border-box;
   outline: none;
   font-size: 18px;
   font-weight: bold;
   color: #445161;
   background-color: #ffffff;
+}
+
+.button:hover {
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  background-color: #445161;
 }
 
 .contacts {
@@ -353,7 +361,6 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   max-width: 500px;
 }
@@ -388,7 +395,8 @@ body {
   padding: 12px 10px;
   height: 170px;
   border: 0;
-  width: 500px;
+  box-sizing: border-box;
+  /* width: 500px; */
   font-size: 16px;
   font-family: "Arial", sans-serif;
   border-radius: 5px;
@@ -398,13 +406,21 @@ body {
   width: 100%;
   max-width: 140px;
   padding: 14px 10px;
-  border: 0;
+  margin: auto;
+  border: solid 1px;
   border-radius: 5px;
+  box-sizing: border-box;
   outline: none;
   font-size: 16px;
   font-weight: bold;
   color: #445162;
   background-color: #ffffff;
+}
+
+.form__button:hover {
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  background-color: #445162;
 }
 
 .social {
@@ -505,5 +521,68 @@ body {
     width: 100%;
     max-width: 400px;
   }
+
 }
 
+@media (max-width: 600px) {
+
+  .header__image {
+    width: 370px;
+    height: 169px;
+  }
+
+  .about-your-product__block {
+    width: 339px;
+    height: 193px;
+  }
+
+  .advantages__text {
+    padding: 35px 0 0;
+    background: url(../images/icons/plus-icon.png) no-repeat 50% 0;
+  }
+
+  .scrinshot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scrinshot__name {
+    text-align: center;
+    line-height: 22px;
+  }
+
+  .scrinshot__image {
+    margin: 0 auto 16px;
+  }
+
+  .review {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review__photo {
+    margin: 0 auto 15px;
+  }
+
+  .review__text {
+    margin: 0;
+  }
+
+  .review__name::after {
+    top: -10px;
+    left: calc((100% - 23px)/2);
+    width: 23px;
+    height: 12px;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  }
+
+  .social {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact {
+    width: 200px;
+  }
+}
